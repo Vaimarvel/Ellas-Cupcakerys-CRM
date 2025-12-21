@@ -1,0 +1,591 @@
+{
+    "customers": {
+        "9012345678": {
+            "id": "9012345678",
+            "name": "Bola Alade",
+            "email": "bola@example.com",
+            "preferences": [
+                "Chocolate",
+                "No Nuts",
+                "Coffee Lover"
+            ],
+            "loyalty_points": 883,
+            "last_order_date": "2025-12-21T00:33:30.673708",
+            "is_first_time": false
+        },
+        "NEW_USER": {
+            "id": "NEW_USER",
+            "name": "New Customer",
+            "email": "",
+            "preferences": [],
+            "loyalty_points": 0,
+            "last_order_date": null,
+            "is_first_time": true
+        },
+        "KWE9C6RF0Z": {
+            "id": "KWE9C6RF0Z",
+            "name": "New Customer",
+            "email": "",
+            "preferences": [],
+            "loyalty_points": 63,
+            "last_order_date": "2025-12-20T20:55:13.357701",
+            "is_first_time": false
+        },
+        "UOCSWYK7N4": {
+            "id": "UOCSWYK7N4",
+            "name": "Oise",
+            "email": "jarvelvai17@gmail.com",
+            "preferences": [],
+            "loyalty_points": 233,
+            "last_order_date": "2025-12-21T00:47:11.343732",
+            "is_first_time": false
+        },
+        "ECQ6TABPJ7": {
+            "id": "ECQ6TABPJ7",
+            "name": "Vai",
+            "email": "okhaioisevai44@gmail.com",
+            "preferences": [],
+            "loyalty_points": 363,
+            "last_order_date": "2025-12-21T18:03:08.460695",
+            "is_first_time": false
+        },
+        "6PKJ0ZCW3V": {
+            "id": "6PKJ0ZCW3V",
+            "name": "Oise",
+            "email": "jarvelvai17@gmail.com",
+            "preferences": [],
+            "loyalty_points": 0,
+            "last_order_date": null,
+            "is_first_time": true
+        },
+        "X2": {
+            "id": "X2",
+            "name": "Oise",
+            "email": "dup@example.com",
+            "preferences": [],
+            "loyalty_points": 37
+        }
+    },
+    "menu": {
+        "P001": {
+            "id": "P001",
+            "name": "Red Velvet Cupcake",
+            "price": 850.0,
+            "ingredients": [
+                "Cream Cheese",
+                "Cocoa",
+                "Vanilla"
+            ],
+            "is_available": true,
+            "image_url": "/images/red_velvet_cupcake.png",
+            "loyalty_points": 8
+        },
+        "P002": {
+            "id": "P002",
+            "name": "Classic Chocolate Cake (6-inch)",
+            "price": 5500.0,
+            "ingredients": [
+                "Dark Chocolate",
+                "Flour",
+                "Butter",
+                "Nuts"
+            ],
+            "is_available": true,
+            "image_url": "/images/chocolate_cake.png",
+            "loyalty_points": 55
+        },
+        "P003": {
+            "id": "P003",
+            "name": "Vegan Lemon Loaf",
+            "price": 3200.0,
+            "ingredients": [
+                "Lemon",
+                "Flour",
+                "Vegan"
+            ],
+            "is_available": true,
+            "image_url": "/images/lemon_loaf.png",
+            "loyalty_points": 32
+        },
+        "P004": {
+            "id": "P004",
+            "name": "Small Chops Platter",
+            "price": 2500.0,
+            "ingredients": [
+                "Samosa",
+                "Spring Roll",
+                "Puff Puff",
+                "Chicken"
+            ],
+            "is_available": true,
+            "image_url": "/images/small_chops.png",
+            "loyalty_points": 25
+        },
+        "P005": {
+            "id": "P005",
+            "name": "Fresh Baked Buns",
+            "price": 500.0,
+            "ingredients": [
+                "Flour",
+                "Sugar",
+                "Butter"
+            ],
+            "is_available": true,
+            "image_url": "/images/buns-fresh.png",
+            "loyalty_points": 5
+        }
+    },
+    "orders": {
+        "O-202501": {
+            "id": "O-202501",
+            "customer_id": "9012345678",
+            "items": [
+                {
+                    "item_id": "P002",
+                    "name": "Classic Chocolate Cake (6-inch)",
+                    "quantity": 1
+                }
+            ],
+            "status": "Completed",
+            "payment_status": "Paid",
+            "timestamp": "2025-12-19T03:34:49.775794",
+            "total": 5500.0,
+            "points_awarded": true
+        },
+        "O-1766259601": {
+            "id": "O-1766259601",
+            "customer_id": "9012345678",
+            "items": [
+                {
+                    "item_id": "P001",
+                    "name": "Red Velvet Cupcake",
+                    "quantity": 1,
+                    "price_at_order": 850.0
+                }
+            ],
+            "status": "Completed",
+            "payment_status": "Paid",
+            "timestamp": "2025-12-20T20:40:01.590620",
+            "total": 850.0,
+            "points_awarded": true
+        },
+        "O-1766259747": {
+            "id": "O-1766259747",
+            "customer_id": "KWE9C6RF0Z",
+            "items": [
+                {
+                    "item_id": "P001",
+                    "name": "Red Velvet Cupcake",
+                    "quantity": 1,
+                    "price_at_order": 850.0
+                }
+            ],
+            "status": "Completed",
+            "payment_status": "Paid",
+            "timestamp": "2025-12-20T20:42:27.263626",
+            "total": 850.0,
+            "points_awarded": true
+        },
+        "O-1766259824": {
+            "id": "O-1766259824",
+            "customer_id": "KWE9C6RF0Z",
+            "items": [
+                {
+                    "item_id": "P002",
+                    "name": "Classic Chocolate Cake (6-inch)",
+                    "quantity": 1,
+                    "price_at_order": 5500.0
+                }
+            ],
+            "status": "Completed",
+            "payment_status": "Paid",
+            "timestamp": "2025-12-20T20:43:44.035920",
+            "total": 5500.0,
+            "points_awarded": true
+        },
+        "O-1766259923": {
+            "id": "O-1766259923",
+            "customer_id": "9012345678",
+            "items": [
+                {
+                    "item_id": "P001",
+                    "name": "Red Velvet Cupcake",
+                    "quantity": 1,
+                    "price_at_order": 850.0
+                }
+            ],
+            "status": "Cancelled",
+            "payment_status": "Unpaid",
+            "timestamp": "2025-12-20T20:45:23.729209",
+            "total": 850.0
+        },
+        "O-1766259999": {
+            "id": "O-1766259999",
+            "customer_id": "9012345678",
+            "items": [
+                {
+                    "item_id": "P001",
+                    "name": "Red Velvet Cupcake",
+                    "quantity": 1,
+                    "price_at_order": 850.0
+                }
+            ],
+            "status": "Cancelled",
+            "payment_status": "Unpaid",
+            "timestamp": "2025-12-20T20:46:39.082116",
+            "total": 850.0
+        },
+        "O-1766260513": {
+            "id": "O-1766260513",
+            "customer_id": "KWE9C6RF0Z",
+            "items": [
+                {
+                    "item_id": "P002",
+                    "name": "Classic Chocolate Cake (6-inch)",
+                    "quantity": 1,
+                    "price_at_order": 5500.0
+                }
+            ],
+            "status": "Cancelled",
+            "payment_status": "Unpaid",
+            "timestamp": "2025-12-20T20:55:13.357701",
+            "total": 5500.0
+        },
+        "O-1766263297": {
+            "id": "O-1766263297",
+            "customer_id": "ECQ6TABPJ7",
+            "items": [
+                {
+                    "item_id": "P005",
+                    "name": "Fresh Baked Buns",
+                    "quantity": 1,
+                    "price_at_order": 500.0
+                }
+            ],
+            "status": "Completed",
+            "payment_status": "Paid",
+            "timestamp": "2025-12-20T21:41:37.251282",
+            "total": 500.0,
+            "points_awarded": true
+        },
+        "O-1766263566": {
+            "id": "O-1766263566",
+            "customer_id": "UOCSWYK7N4",
+            "items": [
+                {
+                    "item_id": "P005",
+                    "name": "Fresh Baked Buns",
+                    "quantity": 1,
+                    "price_at_order": 500.0
+                }
+            ],
+            "status": "Completed",
+            "payment_status": "Paid",
+            "timestamp": "2025-12-20T21:46:06.170932",
+            "total": 500.0,
+            "points_awarded": true
+        },
+        "O-1766263783": {
+            "id": "O-1766263783",
+            "customer_id": "6PKJ0ZCW3V",
+            "items": [
+                {
+                    "item_id": "P003",
+                    "name": "Vegan Lemon Loaf",
+                    "quantity": 1,
+                    "price_at_order": 3200.0
+                }
+            ],
+            "status": "Completed",
+            "payment_status": "Paid",
+            "timestamp": "2025-12-20T21:49:43.604027",
+            "total": 3200.0,
+            "points_awarded": true
+        },
+        "O-1766264887": {
+            "id": "O-1766264887",
+            "customer_id": "ECQ6TABPJ7",
+            "items": [
+                {
+                    "item_id": "P004",
+                    "name": "Small Chops Platter",
+                    "quantity": 1,
+                    "price_at_order": 2500.0
+                }
+            ],
+            "status": "Completed",
+            "payment_status": "Paid",
+            "timestamp": "2025-12-20T22:08:07.462678",
+            "total": 2500.0,
+            "points_awarded": true
+        },
+        "O-1766268958": {
+            "id": "O-1766268958",
+            "customer_id": "ECQ6TABPJ7",
+            "items": [
+                {
+                    "item_id": "P004",
+                    "name": "Small Chops Platter",
+                    "quantity": 1,
+                    "price_at_order": 2500.0
+                }
+            ],
+            "status": "Completed",
+            "payment_status": "Paid",
+            "timestamp": "2025-12-20T23:15:58.264418",
+            "total": 2500.0,
+            "points_awarded": true
+        },
+        "O-1766269186": {
+            "id": "O-1766269186",
+            "customer_id": "ECQ6TABPJ7",
+            "items": [
+                {
+                    "item_id": "P001",
+                    "name": "Red Velvet Cupcake",
+                    "quantity": 1,
+                    "price_at_order": 850.0
+                }
+            ],
+            "status": "Completed",
+            "payment_status": "Paid",
+            "timestamp": "2025-12-20T23:19:46.979052",
+            "total": 850.0,
+            "points_awarded": true
+        },
+        "O-1766271984": {
+            "id": "O-1766271984",
+            "customer_id": "ECQ6TABPJ7",
+            "items": [
+                {
+                    "item_id": "P004",
+                    "name": "Small Chops Platter",
+                    "quantity": 1,
+                    "price_at_order": 2500.0
+                }
+            ],
+            "status": "Completed",
+            "payment_status": "Paid",
+            "timestamp": "2025-12-21T00:06:24.478773",
+            "total": 2500.0,
+            "points_awarded": true
+        },
+        "O-1766272149": {
+            "id": "O-1766272149",
+            "customer_id": "UOCSWYK7N4",
+            "items": [
+                {
+                    "item_id": "P001",
+                    "name": "Red Velvet Cupcake",
+                    "quantity": 1,
+                    "price_at_order": 850.0
+                }
+            ],
+            "status": "Completed",
+            "payment_status": "Paid",
+            "timestamp": "2025-12-21T00:09:09.732758",
+            "total": 850.0,
+            "points_awarded": true
+        },
+        "O-1766272475": {
+            "id": "O-1766272475",
+            "customer_id": "9012345678",
+            "items": [
+                {
+                    "item_id": "P001",
+                    "name": "Red Velvet Cupcake",
+                    "quantity": 1,
+                    "price_at_order": 850.0
+                }
+            ],
+            "status": "Cancelled",
+            "payment_status": "Unpaid",
+            "timestamp": "2025-12-21T00:14:35.313405",
+            "total": 850.0
+        },
+        "O-1766272744": {
+            "id": "O-1766272744",
+            "customer_id": "9012345678",
+            "items": [
+                {
+                    "item_id": "P001",
+                    "name": "Red Velvet Cupcake",
+                    "quantity": 10,
+                    "price_at_order": 850.0
+                }
+            ],
+            "status": "Cancelled",
+            "payment_status": "Unpaid",
+            "timestamp": "2025-12-21T00:19:04.961679",
+            "total": 8500.0
+        },
+        "O-1766273610": {
+            "id": "O-1766273610",
+            "customer_id": "9012345678",
+            "items": [
+                {
+                    "item_id": "P001",
+                    "name": "Red Velvet Cupcake",
+                    "quantity": 10,
+                    "price_at_order": 850.0
+                }
+            ],
+            "status": "Cancelled",
+            "payment_status": "Unpaid",
+            "timestamp": "2025-12-21T00:33:30.673708",
+            "total": 8500.0
+        },
+        "O-1766273710": {
+            "id": "O-1766273710",
+            "customer_id": "UOCSWYK7N4",
+            "items": [
+                {
+                    "item_id": "P001",
+                    "name": "Red Velvet Cupcake",
+                    "quantity": 10,
+                    "price_at_order": 850.0
+                }
+            ],
+            "status": "Completed",
+            "payment_status": "Paid",
+            "timestamp": "2025-12-21T00:35:10.661667",
+            "total": 8500.0,
+            "points_awarded": true
+        },
+        "O-1766274266": {
+            "id": "O-1766274266",
+            "customer_id": "UOCSWYK7N4",
+            "items": [
+                {
+                    "item_id": "P001",
+                    "name": "Red Velvet Cupcake",
+                    "quantity": 10,
+                    "price_at_order": 850.0
+                }
+            ],
+            "status": "Completed",
+            "payment_status": "Paid",
+            "timestamp": "2025-12-21T00:44:26.240943",
+            "total": 8500.0,
+            "points_awarded": true
+        },
+        "O-1766274431": {
+            "id": "O-1766274431",
+            "customer_id": "UOCSWYK7N4",
+            "items": [
+                {
+                    "item_id": "P004",
+                    "name": "Small Chops Platter",
+                    "quantity": 2,
+                    "price_at_order": 2500.0
+                }
+            ],
+            "status": "Completed",
+            "payment_status": "Paid",
+            "timestamp": "2025-12-21T00:47:11.343732",
+            "total": 5000.0,
+            "points_awarded": true
+        },
+        "O-1766274503": {
+            "id": "O-1766274503",
+            "customer_id": "ECQ6TABPJ7",
+            "items": [
+                {
+                    "item_id": "P002",
+                    "name": "Classic Chocolate Cake (6-inch)",
+                    "quantity": 5,
+                    "price_at_order": 5500.0
+                }
+            ],
+            "status": "Completed",
+            "payment_status": "Paid",
+            "timestamp": "2025-12-21T00:48:23.187339",
+            "total": 27500.0,
+            "points_awarded": true
+        },
+        "O-1766336588": {
+            "id": "O-1766336588",
+            "customer_id": "ECQ6TABPJ7",
+            "items": [
+                {
+                    "item_id": "P002",
+                    "name": "Classic Chocolate Cake (6-inch)",
+                    "quantity": 1,
+                    "price_at_order": 5500.0
+                }
+            ],
+            "status": "Completed",
+            "payment_status": "Paid",
+            "timestamp": "2025-12-21T18:03:08.460695",
+            "total": 5500.0,
+            "points_awarded": true
+        }
+    },
+    "promos": {},
+    "feedback": [
+        {
+            "log_id": "L-0058",
+            "timestamp": "2025-12-20T20:43:44.045409",
+            "user_id": "KWE9C6RF0Z",
+            "message": "I love em cakes",
+            "sentiment": "Neutral"
+        },
+        {
+            "log_id": "L-8bd7",
+            "timestamp": "2025-12-20T20:55:13.917252",
+            "user_id": "KWE9C6RF0Z",
+            "message": "The cakes are good",
+            "sentiment": "Neutral"
+        },
+        {
+            "log_id": "L-d0f1",
+            "timestamp": "2025-12-20T21:43:38.100175",
+            "user_id": "SSVMN3NRX2",
+            "message": "I loved the cakes",
+            "sentiment": "Neutral"
+        },
+        {
+            "log_id": "L-48b9",
+            "timestamp": "2025-12-20T21:43:44.178055",
+            "user_id": "SSVMN3NRX2",
+            "message": "I loved the cakes",
+            "sentiment": "Neutral"
+        },
+        {
+            "log_id": "L-7ccf",
+            "timestamp": "2025-12-20T21:48:26.085163",
+            "user_id": "9012345678",
+            "message": "The buns were excellent",
+            "sentiment": "Neutral"
+        },
+        {
+            "log_id": "L-ebf3",
+            "timestamp": "2025-12-20T21:49:05.699550",
+            "user_id": "9012345678",
+            "message": "Great service",
+            "sentiment": "Neutral"
+        },
+        {
+            "log_id": "L-33d1",
+            "timestamp": "2025-12-20T23:14:20.910699",
+            "user_id": "TESTUSER1",
+            "message": "Great service!",
+            "sentiment": "Neutral"
+        },
+        {
+            "log_id": "L-5204",
+            "timestamp": "2025-12-21T00:49:26.680813",
+            "user_id": "ECQ6TABPJ7",
+            "message": "I am glad things are working largely great",
+            "sentiment": "Neutral"
+        }
+    ],
+    "site_settings": {
+        "contact_email": "sinuolaadisa@gmail.com",
+        "contact_phone": "+234 801 234 5678",
+        "contact_instagram": "@EllasCupcakery",
+        "contact_whatsapp": "+2348012345678",
+        "contact_facebook": "",
+        "offer_points_threshold": 2000
+    }
+}

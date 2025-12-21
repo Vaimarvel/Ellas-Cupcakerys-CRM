@@ -1,0 +1,106 @@
+:root {
+  --color-bg: #F7F4F0;
+  --color-primary: #E9A8B6;
+  --color-text: #5E454B;
+  --color-white: #FFFFFF;
+  
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Outfit', sans-serif;
+
+  /* Soft Neumorphism Shadows */
+  --shadow-light: #ffffff;
+  --shadow-dark: #d1cfcb; /* Slightly darker than bg */
+  
+  --shadow-neumorphism: 6px 6px 12px var(--shadow-dark), -6px -6px 12px var(--shadow-light);
+  --shadow-inset: inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light);
+
+  --radius-card: 20px;
+  --radius-btn: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin: 0;
+}
+
+button {
+  font-family: var(--font-body);
+}
+
+/* --- Utilities --- */
+
+.neumorphic-card {
+  background: var(--color-bg);
+  box-shadow: var(--shadow-neumorphism);
+  border-radius: var(--radius-card);
+  padding: 20px;
+}
+
+.neumorphic-btn {
+  background: var(--color-bg);
+  color: var(--color-text);
+  border: none;
+  border-radius: var(--radius-btn);
+  padding: 12px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow-neumorphism);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.neumorphic-btn:active {
+  box-shadow: var(--shadow-inset);
+  transform: translateY(1px);
+}
+
+.neumorphic-btn.primary {
+  background: var(--color-text);
+  color: var(--color-bg); /* Use light text on dark button */
+  box-shadow: 4px 4px 10px rgba(94, 69, 75, 0.4), -4px -4px 10px rgba(255, 255, 255, 0.5);
+}
+
+.neumorphic-btn.primary:active {
+    box-shadow: inset 3px 3px 6px rgba(0,0,0,0.3);
+}
+
+.neumorphic-input {
+  background: var(--color-bg);
+  border: none;
+  box-shadow: var(--shadow-inset);
+  border-radius: 20px; /* Pill shape */
+  padding: 12px 20px;
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--color-text);
+  outline: none;
+}
+
+/* Chat Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+  background: #dcd9d5; 
+  border-radius: 10px;
+}

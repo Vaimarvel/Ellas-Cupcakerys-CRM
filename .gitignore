@@ -1,0 +1,20 @@
+# Node
+node_modules/
+dashboard/node_modules/
+dashboard/dist/
+
+# Python
+__pycache__/
+*.pyc
+ella/
+
+# Env & Vercel
+.env
+.vercel/
+
+# Logs & misc
+*.log
+backend.log
+.DS_Store
+Thumbs.db
+

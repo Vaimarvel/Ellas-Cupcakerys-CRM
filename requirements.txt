@@ -1,0 +1,12 @@
+langgraph
+langchain
+langchain-groq
+langchain-community
+python-dotenv
+fastapi
+uvicorn
+google-search-results
+pydantic
+PyPDF2
+python-multipart
+langchain-openai
