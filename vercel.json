@@ -4,8 +4,8 @@
     { "src": "dashboard/package.json", "use": "@vercel/static-build", "config": { "buildCommand": "npm run build", "outputDirectory": "dashboard/dist" } }
   ],
   "routes": [
-    { "handle": "filesystem" },
     { "src": "/api/(.*)", "dest": "api/index.py" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/assets/(.*)", "dest": "dashboard/dist/assets/$1" },
+    { "src": "/(.*)", "dest": "dashboard/dist/index.html" }
   ]
 }
