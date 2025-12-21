@@ -75,9 +75,8 @@ class Config:
     ORDER_STATUSES = ["Processing", "Ready for Delivery", "Out for Delivery", "Completed"]
     CRITICAL_SENTIMENT = ["crisis", "negative"]
 
-    # Ensure essential keys are available (Check at least Groq)
-    if not GROQ_API_KEY and not any(p['key'] for p in PROVIDERS):
-        raise ValueError("No API Keys found in environment variables.")
+    # LLM availability flag: allow app to run without keys for non-LLM endpoints
+    LLM_ENABLED = bool(GROQ_API_KEY or any(p.get('key') for p in PROVIDERS))
 
 # Create a single configuration instance
 CRM_CONFIG = Config()
